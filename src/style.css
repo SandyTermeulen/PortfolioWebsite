@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+body {
+  margin: 0;
+  font-family: "Raleway", serif !important;
+  color: #ffffff;
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+/*background*/
+@keyframes move-background {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to {
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
+}
+@-webkit-keyframes move-background {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to {
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
+}
+
+@-moz-keyframes move-background {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to {
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
+}
+
+@-webkit-keyframes move-background {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to {
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
+}
+
+.background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -3 !important;
+}
+
+.stars {
+  background: black
+    url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  z-index: -3 !important;
+}
+
+.twinkling {
+  width: 10000px;
+  height: 100%;
+  background: transparent
+    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png")
+    repeat;
+  background-size: 1000px 1000px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -2 !important;
+
+  -moz-animation: move-background 70s linear infinite;
+  -ms-animation: move-background 70s linear infinite;
+  -o-animation: move-background 70s linear infinite;
+  -webkit-animation: move-background 70s linear infinite;
+  animation: move-background 70s linear infinite;
+}
+
+.clouds {
+  width: 10000px;
+  height: 100%;
+  background: transparent
+    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/clouds_repeat.png")
+    repeat;
+  background-size: 1000px 1000px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1 !important;
+
+  -moz-animation: move-background 150s linear infinite;
+  -ms-animation: move-background 150s linear infinite;
+  -o-animation: move-background 150s linear infinite;
+  -webkit-animation: move-background 150s linear infinite;
+  animation: move-background 150s linear infinite;
+}
+img {
+  height: 70vh;
+  width: 70vh;
+  position: absolute;
+  z-index: -1 !important;
+  right: 20px;
+}
+
+/* Navbar Section  */
+.sticky {
+  background-color: #0000003d !important;
+  transition: all 0.3s ease-out 0s !important;
+  box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
+  backdrop-filter: blur(15px) !important;
+}
+.navItem-margin {
+  margin-right: 1.5rem;
+}
+.navbar-link,
+.navbar-link:hover {
+  text-decoration: none !important;
+  color: #ffffff;
+}
+
+.navbar {
+  position: fixed !important;
+  transition: all 0.3s ease-out 0s !important;
+  padding: 0.5rem 2rem !important;
+  font-size: 1.2rem !important;
+}
+
+/* underline effect  */
+.navbar-nav .nav-item a::after {
+  content: "";
+  position: relative;
+  display: block;
+  height: 1.5px;
+  width: 0;
+  border-radius: 16px;
+  background: #ffffff;
+  bottom: 1px;
+  left: 0;
+  z-index: -1;
+  transition: all 0.3s ease-out 0s;
+}
+
+.navbar-nav .nav-item a:hover::after {
+  width: 100%;
+}
+.logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Home  */
+.heading {
+  font-size: 3.5em;
+  padding-top: 8rem;
+  padding-bottom: 2rem;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+
+.heading-name {
+  font-size: 3.5em;
+  padding-top: 1rem;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+
+.main-name {
+  font-family: "Raleway", serif !important;
+  font-size: 3rem;
+  color: whitesmoke;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+
+.Typewriter__wrapper {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 3.5em;
+  color: whitesmoke;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+.Typewriter__cursor {
+  font-size: 3.5em;
+  color: whitesmoke;
+}
+
+/* Skills  */
+.tech-icons {
+  font-size: 4.5em;
+  margin: 1.2rem 0.7rem 1.2rem 0.7rem;
+  padding: 10px;
+  opacity: 0.93;
+  border: 1.7px solid #ffffff;
+  color: #ffffff;
+  vertical-align: middle;
+  text-align: center;
+  border-radius: 5px;
+  display: table;
+  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137);
+  overflow: hidden;
+  transition: all 0.4s ease 0s;
+  background-color: #0000003d;
+  backdrop-filter: blur(15px);
+}
+
+.tech-icons:hover {
+  transform: scale(1.05);
+  overflow: hidden;
+  border: 2.5px solid #ffffff;
+}
+.tech-icon-images {
+  padding: 20px;
+  line-height: 1.6;
+}
+
+.tech-text {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.home-about-description {
+  padding-top: 1rem;
+}
+.about-image {
+  width: 100px;
+}
+
+.home-content {
+  margin: auto;
+  padding: 5rem 0 5rem;
+  color: whitesmoke;
+}
+.meet-text {
+  width: 100vh;
+  background-color: #0000003d;
+  transition: all 0.3s ease-out 0s;
+  box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171);
+  backdrop-filter: blur(15px);
+  margin: 0;
+}
+
+.contact-form {
+  color: whitesmoke;
+  background-color: #0000003d;
+  transition: all 0.3s ease-out 0s;
+  box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171);
+  backdrop-filter: blur(15px);
+  padding: 30px;
+  margin-top: 5rem;
+}
+
+input[type="text"],
+select,
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #0000003d;
+  backdrop-filter: blur(15px);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: 1.7px solid #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #8685853d;
+  border: 2px solid #ffffff;
+}
+label {
+  margin: 0.5rem 0 0.5rem 0;
+}
+.projects {
+  background-color: blue;
+  backdrop-filter: blur(15px);
+  color: whitesmoke;
+  border: 1.7px solid #ffffff;
+}
